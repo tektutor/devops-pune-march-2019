@@ -1,0 +1,21 @@
+1. Ansible retrieves all server connectivity details from inventory file
+2. Assuming the playbook has 2 tasks and there 5 servers listed in the inventory.
+3. It will take all the inputs we have provided to the task1 and parallely it makes ssh connection to all 5 servers.
+4. Then using sftp/scp it copies the ansible module (python script) from Ansible Controller Machine to the remote servers.
+5. Remotely it then exectues the ansible module scripts.
+6. Waits for responses to arive from all the remote servers.
+7. Then repeat the steps 3 to 6 for all remaning tasks in the Play.
+8. Gives a summary in the Ansible Controller Machine about the status of the playbook execution.
+
+
+Task1
+	is S1,S2,S3,S4 and S5 ( SUCCESS )
+
+Task2
+      is also succeeded on all machines
+
+Task3
+     Copy failed on S3 machine, but other servers it passed
+
+Task 4
+     will only be executed on S1, S2, S4 and S5

@@ -1,0 +1,25 @@
+You can check my blog for more details
+http://tektutor.org/blog
+
+
+Listing docker images
++++++++++++++++++++++
+docker images
+
+Deleting a docker image
++++++++++++++++++++++++
+docker rmi ubuntu
+
+Pulling/Downloading a docker image from hub.docker.com docker remote registry
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+docker pull hello-world
+
+Creating a new container in the foreground mode
++++++++++++++++++++++++++++++++++++++++++++++++
+docker run -it --name ubuntu1 --hostname ubuntu1 ubuntu /bin/bash
+
+Creating a new container in the background/daemon mode
+++++++++++++++++++++++++++++++++++++++++++++++++++++++
+docker run -dit --name ubuntu1 --hostname ubuntu1 ubuntu /bin/bash
+
+
