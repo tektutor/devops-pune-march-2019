@@ -8,6 +8,10 @@ Home Page https://github.com/tektutor/devops-pune-march-2019/wiki<br>
 Docker Commands https://github.com/tektutor/devops-pune-march-2019/wiki/Docker<br>
 Ansible Commands https://github.com/tektutor/devops-pune-march-2019/wiki/Ansible<br>
 
-Please feel free to write me jegan@tektutor.org for any enquiries.<br>
+Happy coding!<br>
 
-Happy coding!
+<B>For Further reference</B>
+
+My Blog http://www.tektutor.org/blog<br>
+You can subscribe to my YouTube Channel https://www.youtube.com/user/BulletJegan/videos<br>
+Please feel free to write me jegan@tektutor.org for any enquiries.<br>
