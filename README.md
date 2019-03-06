@@ -1,14 +1,13 @@
-# devops-pune-march-2019
-TekTutor
+Welcome to TekTutor - DevOps Pune March 2019 GitHub Repository!<br>
 
-This has all the lab code samples that I wrote during devops training that I conducted during March 2019 @ Pune, India.
+This repository has all the lab code samples that I wrote during devops training that I conducted during March 2019 @ Pune, India.<br>
 
-You could check the GitHub Wiki section for more instructions.
+You could check the GitHub Wiki section for more instructions.<br>
 
-Home Page https://github.com/tektutor/devops-pune-march-2019/wiki
-Docker Commands https://github.com/tektutor/devops-pune-march-2019/wiki/Docker
-Ansible Commands https://github.com/tektutor/devops-pune-march-2019/wiki/Ansible
+Home Page https://github.com/tektutor/devops-pune-march-2019/wiki<br>
+Docker Commands https://github.com/tektutor/devops-pune-march-2019/wiki/Docker<br>
+Ansible Commands https://github.com/tektutor/devops-pune-march-2019/wiki/Ansible<br>
 
-Please feel free to write me jegan@tektutor.org for any enquiries.
+Please feel free to write me jegan@tektutor.org for any enquiries.<br>
 
 Happy coding!
