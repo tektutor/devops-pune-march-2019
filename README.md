@@ -16,32 +16,32 @@ My Blog http://www.tektutor.org/blog<br>
 You can subscribe to my YouTube Channel https://www.youtube.com/user/BulletJegan/videos<br>
 
 Docker Getting Started<br>
-https://www.youtube.com/watch?v=Zpqq98uSCVQ
-https://www.youtube.com/watch?v=OUtOVhW3EgI&t=798s
-https://docs.docker.com/get-started/
+https://www.youtube.com/watch?v=Zpqq98uSCVQ<br>
+https://www.youtube.com/watch?v=OUtOVhW3EgI&t=798s<br>
+https://docs.docker.com/get-started/<br>
 
 Docker Namespace<br>
-https://docs.docker.com/engine/security/userns-remap/
+https://docs.docker.com/engine/security/userns-remap/<br>
 
 Docker Control Groups<br>
-https://www.kernel.org/doc/Documentation/cgroup-v1/cgroups.txt
-https://github.com/docker/labs/tree/master/security/cgroups
+https://www.kernel.org/doc/Documentation/cgroup-v1/cgroups.txt<br>
+https://github.com/docker/labs/tree/master/security/cgroups<br>
 
 Docker Networking<br>
-https://docs.docker.com/network/
+https://docs.docker.com/network/<br>
 
 Docker Container Metrics<br>
-https://docs.docker.com/config/containers/runmetrics/
+https://docs.docker.com/config/containers/runmetrics/<br>
 
 Docker Security<br>
-https://docs.docker.com/engine/security/security/
+https://docs.docker.com/engine/security/security/<br>
 
 Ansible TekTutor Videos<br>
-http://www.tektutor.org/commonly-used-ansible-commands/
-https://www.youtube.com/watch?v=W520vrQSs0U&t=1438s
+http://www.tektutor.org/commonly-used-ansible-commands/<br>
+https://www.youtube.com/watch?v=W520vrQSs0U&t=1438s<br>
 
 Ansible Getting Started<br>
-https://docs.ansible.com/ansible/latest/user_guide/intro_getting_started.html
+https://docs.ansible.com/ansible/latest/user_guide/intro_getting_started.html<br>
 
 
 
