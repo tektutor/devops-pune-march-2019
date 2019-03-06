@@ -19,6 +19,7 @@ Docker Getting Started<br>
 https://www.youtube.com/watch?v=Zpqq98uSCVQ<br>
 https://www.youtube.com/watch?v=OUtOVhW3EgI&t=798s<br>
 https://docs.docker.com/get-started/<br>
+https://docker-curriculum.com/<br>
 
 Docker Namespace<br>
 https://docs.docker.com/engine/security/userns-remap/<br>
@@ -26,6 +27,13 @@ https://docs.docker.com/engine/security/userns-remap/<br>
 Docker Control Groups<br>
 https://www.kernel.org/doc/Documentation/cgroup-v1/cgroups.txt<br>
 https://github.com/docker/labs/tree/master/security/cgroups<br>
+
+Docker reference materials<br>
+https://media.readthedocs.org/pdf/docker-sean/latest/docker-sean.pdf<br>
+https://dockerbook.com/TheDockerBook_sample.pdf<br>
+https://www.tutorialspoint.com/docker/docker_tutorial.pdf<br>
+https://us.pycon.org/2016/site_media/media/tutorial_handouts/DockerSlides.pdf<br>
+https://www.socallinuxexpo.org/sites/default/files/presentations/docker-and-containers-for-development-and-deployment-scale12x.pdf<br>
 
 Docker Networking<br>
 https://docs.docker.com/network/<br>
