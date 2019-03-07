@@ -1,0 +1,4 @@
+This folder has two versions of how one could automate installing, configuring and deploying nginx web server via Ansible.
+
+The before-refactoring is a bad way to develop ansible playbooks and after-refactoring demonstrates how to develop professional
+playbooks following clean coding best practices.
