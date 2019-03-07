@@ -1,0 +1,16 @@
+- name: Demonstrates invoking our custom ansible module
+  hosts: all 
+  tasks:
+    - name: Invoke hello module
+      hello: msg="Hello Ansible Custom Module!"
+      register: output
+
+    - debug: var=output
+
+    - name: Invoke add module
+      add: firstValue=100.5 secondValue=200.5
+      register: result
+      
+    - debug: var=result
+
+    - ping:

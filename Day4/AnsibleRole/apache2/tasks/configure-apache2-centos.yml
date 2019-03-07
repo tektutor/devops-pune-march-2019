@@ -1,7 +1,7 @@
 ---
 - name: Grant permission to updated document root folder in CentOS 
-  copy: src=httpd.conf dest=/etc/httpd/httpd.conf backup=yes
+  copy: src=httpd.conf dest=/etc/httpd/conf/httpd.conf backup=yes
   notify:
-    - Restart httpd service in CentOS 
+    - Restart httpd service in CentOS
 
 ...

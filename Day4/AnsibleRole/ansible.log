@@ -163,3 +163,69 @@ disabled by setting deprecation_warnings=False in ansible.cfg.
 2019-03-07 13:50:59,332 p=37453 u=root |  centos2                    : ok=9    changed=0    unreachable=0    failed=0   
 2019-03-07 13:50:59,332 p=37453 u=root |  ubuntu1                    : ok=10   changed=3    unreachable=0    failed=0   
 2019-03-07 13:50:59,332 p=37453 u=root |  ubuntu2                    : ok=10   changed=3    unreachable=0    failed=0   
+2019-03-07 14:44:28,135 p=41476 u=root |   [WARNING]: Consider using service module rather than running service
+
+2019-03-07 14:44:28,135 p=41476 u=root |  centos2 | SUCCESS | rc=0 >>
+Starting httpd: [  OK  ]httpd: Could not reliably determine the server's fully qualified domain name, using 172.17.0.5 for ServerName
+
+2019-03-07 14:44:28,136 p=41476 u=root |  centos1 | SUCCESS | rc=0 >>
+Starting httpd: [  OK  ]httpd: Could not reliably determine the server's fully qualified domain name, using 172.17.0.6 for ServerName
+
+2019-03-07 14:47:41,396 p=41683 u=root |  PLAY [Demonstrates invoking custom roles] **************************************************************************************
+2019-03-07 14:47:41,403 p=41683 u=root |  TASK [Gathering Facts] *********************************************************************************************************
+2019-03-07 14:47:44,975 p=41683 u=root |  ok: [centos1]
+2019-03-07 14:47:44,980 p=41683 u=root |  TASK [apache2 : include_tasks] *************************************************************************************************
+2019-03-07 14:47:45,005 p=41683 u=root |  included: /root/DevOps/Day4/AnsibleRole/apache2/tasks/install-apache2-centos.yml for centos1
+2019-03-07 14:47:45,012 p=41683 u=root |  TASK [apache2 : Install Extra Packages for Enterprise Linux (EPEL) in CentOS] **************************************************
+2019-03-07 14:48:22,448 p=41683 u=root |  ok: [centos1]
+2019-03-07 14:48:22,454 p=41683 u=root |  TASK [apache2 : Install apache2 in CentOS] *************************************************************************************
+2019-03-07 14:48:46,787 p=41683 u=root |  ok: [centos1]
+2019-03-07 14:48:46,793 p=41683 u=root |  TASK [apache2 : include_tasks] *************************************************************************************************
+2019-03-07 14:48:46,817 p=41683 u=root |  included: /root/DevOps/Day4/AnsibleRole/apache2/tasks/configure-apache2-centos.yml for centos1
+2019-03-07 14:48:46,825 p=41683 u=root |  TASK [apache2 : Grant permission to updated document root folder in CentOS] ****************************************************
+2019-03-07 14:48:48,135 p=41683 u=root |  changed: [centos1]
+2019-03-07 14:48:48,139 p=41683 u=root |  TASK [apache2 : include_tasks] *************************************************************************************************
+2019-03-07 14:48:48,158 p=41683 u=root |  included: /root/DevOps/Day4/AnsibleRole/apache2/tasks/common-apache2-tasks.yml for centos1
+2019-03-07 14:48:48,168 p=41683 u=root |  TASK [apache2 : Create document root folder] ***********************************************************************************
+2019-03-07 14:48:48,512 p=41683 u=root |  ok: [centos1]
+2019-03-07 14:48:48,517 p=41683 u=root |  TASK [apache2 : Deplopy custom web page into apache2] **************************************************************************
+2019-03-07 14:48:48,887 p=41683 u=root |  ok: [centos1]
+2019-03-07 14:48:48,888 p=41683 u=root |  RUNNING HANDLER [apache2 : Restart httpd service in CentOS] ********************************************************************
+2019-03-07 14:48:49,615 p=41683 u=root |   [WARNING]: Consider using service module rather than running service
+
+2019-03-07 14:48:49,616 p=41683 u=root |  changed: [centos1]
+2019-03-07 14:48:49,618 p=41683 u=root |  PLAY RECAP *********************************************************************************************************************
+2019-03-07 14:48:49,618 p=41683 u=root |  centos1                    : ok=10   changed=2    unreachable=0    failed=0   
+2019-03-07 14:53:01,746 p=42374 u=root |  PLAY [Demonstrates invoking custom roles] **************************************************************************************
+2019-03-07 14:53:01,755 p=42374 u=root |  TASK [Gathering Facts] *********************************************************************************************************
+2019-03-07 14:53:05,500 p=42374 u=root |  ok: [centos1]
+2019-03-07 14:53:05,511 p=42374 u=root |  ok: [centos2]
+2019-03-07 14:53:05,516 p=42374 u=root |  TASK [apache2 : include_tasks] *************************************************************************************************
+2019-03-07 14:53:05,556 p=42374 u=root |  included: /root/DevOps/Day4/AnsibleRole/apache2/tasks/install-apache2-centos.yml for centos1, centos2
+2019-03-07 14:53:05,564 p=42374 u=root |  TASK [apache2 : Install Extra Packages for Enterprise Linux (EPEL) in CentOS] **************************************************
+2019-03-07 14:53:21,126 p=42374 u=root |  ok: [centos1]
+2019-03-07 14:53:22,421 p=42374 u=root |  ok: [centos2]
+2019-03-07 14:53:22,429 p=42374 u=root |  TASK [apache2 : Install apache2 in CentOS] *************************************************************************************
+2019-03-07 14:53:33,060 p=42374 u=root |  ok: [centos2]
+2019-03-07 14:53:35,166 p=42374 u=root |  ok: [centos1]
+2019-03-07 14:53:35,173 p=42374 u=root |  TASK [apache2 : include_tasks] *************************************************************************************************
+2019-03-07 14:53:35,213 p=42374 u=root |  included: /root/DevOps/Day4/AnsibleRole/apache2/tasks/configure-apache2-centos.yml for centos1, centos2
+2019-03-07 14:53:35,225 p=42374 u=root |  TASK [apache2 : Grant permission to updated document root folder in CentOS] ****************************************************
+2019-03-07 14:53:36,655 p=42374 u=root |  changed: [centos2]
+2019-03-07 14:53:36,801 p=42374 u=root |  changed: [centos1]
+2019-03-07 14:53:36,805 p=42374 u=root |  TASK [apache2 : include_tasks] *************************************************************************************************
+2019-03-07 14:53:36,834 p=42374 u=root |  included: /root/DevOps/Day4/AnsibleRole/apache2/tasks/common-apache2-tasks.yml for centos1, centos2
+2019-03-07 14:53:36,845 p=42374 u=root |  TASK [apache2 : Create document root folder] ***********************************************************************************
+2019-03-07 14:53:37,227 p=42374 u=root |  ok: [centos2]
+2019-03-07 14:53:37,229 p=42374 u=root |  ok: [centos1]
+2019-03-07 14:53:37,234 p=42374 u=root |  TASK [apache2 : Deplopy custom web page into apache2] **************************************************************************
+2019-03-07 14:53:37,622 p=42374 u=root |  ok: [centos1]
+2019-03-07 14:53:37,639 p=42374 u=root |  ok: [centos2]
+2019-03-07 14:53:37,639 p=42374 u=root |  RUNNING HANDLER [apache2 : Restart httpd service in CentOS] ********************************************************************
+2019-03-07 14:53:38,381 p=42374 u=root |   [WARNING]: Consider using service module rather than running service
+
+2019-03-07 14:53:38,382 p=42374 u=root |  changed: [centos2]
+2019-03-07 14:53:38,382 p=42374 u=root |  changed: [centos1]
+2019-03-07 14:53:38,384 p=42374 u=root |  PLAY RECAP *********************************************************************************************************************
+2019-03-07 14:53:38,384 p=42374 u=root |  centos1                    : ok=10   changed=2    unreachable=0    failed=0   
+2019-03-07 14:53:38,384 p=42374 u=root |  centos2                    : ok=10   changed=2    unreachable=0    failed=0   
