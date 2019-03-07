@@ -6,7 +6,7 @@ sudo su -
 How to generate private/public key pair in Unix/Linux?
 ssh-keygen
 
-Once you have generated your key pairs, make sure you copied your public key and have overwritten authorized_keys as show below
+Once you have generated your key pairs, make sure you copied your public key and have overwritten authorized_keys as shown below
 cp /root/.ssh/id_rsa.pub authorized_keys
 
 To Build the ansible ubuntu image, you can issue the below command
