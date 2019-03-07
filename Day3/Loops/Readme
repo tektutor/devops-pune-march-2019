@@ -1,0 +1,11 @@
+You can execute the list.yml playbook with the below command
+ansible-playbook list.yml
+
+You can execute the dictionary.yml playbook with the below command
+ansible-playbook dictionary.yml
+
+You can execute the sequence.yml playbook with the below command
+ansible-playbook sequence.yml
+
+You can provision container at runtime using the provision-containers.yml file as shown below
+ansible-playbook provision-containers.yml

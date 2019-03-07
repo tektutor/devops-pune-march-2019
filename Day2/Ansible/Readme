@@ -10,3 +10,7 @@ Assuming the playbook has 2 tasks and 5 servers listed in the inventory.
 
 Note:-
 In case, let's say the first task failed on Server named 'S2' then the subsequent tasks in the playbook will not be executed on the Server 'S2', while the execution will continue normally on other remote servers until all the tasks in the playbook are completed.
+
+You can execute the playbook with the below command
+
+ansible-playbook install-nginx.yml

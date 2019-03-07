@@ -1,3 +1,6 @@
+Docker Notes
+++++++++++++
+
 You can check my blog for useful Docker and Other topics
 http://tektutor.org/blog
 
@@ -87,3 +90,13 @@ docker stop $(docker ps -q) && docker rm $(docker ps -aq)
 Deleting an image
 +++++++++++++++++
 docker rmi hello-world
+
+Copying file from Docker container to Local Machine
++++++++++++++++++++++++++++++++++++++++++++++++++++
+docker cp ubuntu1:/etc/nginx/sites-available/default .
+docker cp centos1:/etc/nginx/conf.d/default.conf .
+
+Copying file from Local Machine to Docker container
++++++++++++++++++++++++++++++++++++++++++++++++++++
+docker cp authorized_keys ubuntu1:/root/.ssh/authorized_keys
+docker cp authorized_keys centos1:/root/.ssh/authorized_keys
