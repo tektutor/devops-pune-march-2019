@@ -8,4 +8,4 @@ You can execute the sequence.yml playbook with the below command
 ansible-playbook sequence.yml
 
 You can provision container at runtime using the provision-containers.yml file as shown below
-ansible-playbook provision-container.yml
+ansible-playbook provision-containers.yml
