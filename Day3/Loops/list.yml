@@ -1,0 +1,28 @@
+- name: This playbook will demonstrate use of list variable
+  hosts: all 
+  vars:
+   - software_tools_ubuntu:
+        - vim
+        - tree
+        - net-tools
+        - iputils-ping
+
+   - software_tools_centos:
+        - vim
+        - tree
+        - net-tools
+        - iputils
+  tasks:
+    - name: Install tools in Ubuntu 
+      when: ansible_distribution == "Ubuntu"
+      apt: name="{{item}}" state=latest update_cache=yes
+      with_items: "{{software_tools_ubuntu}}"
+
+    - name: Install Extra Packages for Enterprise Linux (EPEL) in CentOS 
+      when: ansible_distribution == "CentOS"
+      yum: name=epel-release state=latest 
+
+    - name: Install tools in CentOS 
+      when: ansible_distribution == "CentOS"
+      yum: name="{{item}}" state=latest 
+      with_items: "{{software_tools_centos}}"

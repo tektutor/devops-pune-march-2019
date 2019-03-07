@@ -1,0 +1,113 @@
+2019-03-07 07:16:04,284 p=4668 u=root |  PLAY [This playbook will install nginx web server, configures it and deploy a web page in it.] *********************************
+2019-03-07 07:16:04,298 p=4668 u=root |  TASK [Gathering Facts] *********************************************************************************************************
+2019-03-07 07:16:09,570 p=4668 u=root |  ok: [centos1]
+2019-03-07 07:16:09,850 p=4668 u=root |  ok: [centos4]
+2019-03-07 07:16:09,873 p=4668 u=root |  ok: [centos2]
+2019-03-07 07:16:10,090 p=4668 u=root |  ok: [centos3]
+2019-03-07 07:16:10,098 p=4668 u=root |  ok: [centos5]
+2019-03-07 07:16:10,705 p=4668 u=root |  ok: [ubuntu1]
+2019-03-07 07:16:10,710 p=4668 u=root |  ok: [ubuntu3]
+2019-03-07 07:16:10,715 p=4668 u=root |  ok: [ubuntu4]
+2019-03-07 07:16:10,727 p=4668 u=root |  ok: [ubuntu2]
+2019-03-07 07:16:10,829 p=4668 u=root |  ok: [ubuntu5]
+2019-03-07 07:16:10,835 p=4668 u=root |  TASK [Install nginx web server in Ubuntu] **************************************************************************************
+2019-03-07 07:16:10,857 p=4668 u=root |  skipping: [centos1]
+2019-03-07 07:16:10,870 p=4668 u=root |  skipping: [centos2]
+2019-03-07 07:16:10,883 p=4668 u=root |  skipping: [centos3]
+2019-03-07 07:16:10,903 p=4668 u=root |  skipping: [centos4]
+2019-03-07 07:16:10,916 p=4668 u=root |  skipping: [centos5]
+2019-03-07 07:16:47,252 p=4668 u=root |  changed: [ubuntu5]
+2019-03-07 07:16:47,286 p=4668 u=root |  changed: [ubuntu2]
+2019-03-07 07:16:49,782 p=4668 u=root |  changed: [ubuntu1]
+2019-03-07 07:16:51,412 p=4668 u=root |  changed: [ubuntu4]
+2019-03-07 07:16:52,812 p=4668 u=root |  changed: [ubuntu3]
+2019-03-07 07:16:52,816 p=4668 u=root |  TASK [Install Extra Packages For Enterprise Linux (EPEL) in CentOS] ************************************************************
+2019-03-07 07:16:56,762 p=4668 u=root |  changed: [centos2]
+2019-03-07 07:16:56,775 p=4668 u=root |  skipping: [ubuntu1]
+2019-03-07 07:16:56,789 p=4668 u=root |  skipping: [ubuntu2]
+2019-03-07 07:16:56,801 p=4668 u=root |  skipping: [ubuntu3]
+2019-03-07 07:16:56,814 p=4668 u=root |  skipping: [ubuntu4]
+2019-03-07 07:16:56,824 p=4668 u=root |  skipping: [ubuntu5]
+2019-03-07 07:16:58,251 p=4668 u=root |  changed: [centos4]
+2019-03-07 07:17:01,909 p=4668 u=root |  changed: [centos3]
+2019-03-07 07:17:01,913 p=4668 u=root |  changed: [centos5]
+2019-03-07 07:17:01,915 p=4668 u=root |  changed: [centos1]
+2019-03-07 07:17:01,921 p=4668 u=root |  TASK [Install nginx web server in CentOS] **************************************************************************************
+2019-03-07 07:18:19,025 p=4668 u=root |  changed: [centos4]
+2019-03-07 07:18:19,057 p=4668 u=root |  skipping: [ubuntu1]
+2019-03-07 07:18:19,103 p=4668 u=root |  skipping: [ubuntu2]
+2019-03-07 07:18:19,126 p=4668 u=root |  skipping: [ubuntu3]
+2019-03-07 07:18:19,127 p=4668 u=root |  skipping: [ubuntu4]
+2019-03-07 07:18:19,157 p=4668 u=root |  skipping: [ubuntu5]
+2019-03-07 07:18:23,616 p=4668 u=root |  changed: [centos1]
+2019-03-07 07:18:24,761 p=4668 u=root |  changed: [centos3]
+2019-03-07 07:18:24,857 p=4668 u=root |  changed: [centos2]
+2019-03-07 07:18:36,142 p=4668 u=root |  changed: [centos5]
+2019-03-07 07:18:36,155 p=4668 u=root |  TASK [Configure nginx document root folder in Ubuntu] **************************************************************************
+2019-03-07 07:18:36,192 p=4668 u=root |  skipping: [centos1]
+2019-03-07 07:18:36,206 p=4668 u=root |  skipping: [centos2]
+2019-03-07 07:18:36,218 p=4668 u=root |  skipping: [centos3]
+2019-03-07 07:18:36,230 p=4668 u=root |  skipping: [centos4]
+2019-03-07 07:18:36,284 p=4668 u=root |  skipping: [centos5]
+2019-03-07 07:18:37,133 p=4668 u=root |  changed: [ubuntu3]
+2019-03-07 07:18:37,139 p=4668 u=root |  changed: [ubuntu4]
+2019-03-07 07:18:37,147 p=4668 u=root |  changed: [ubuntu1]
+2019-03-07 07:18:37,148 p=4668 u=root |  changed: [ubuntu5]
+2019-03-07 07:18:37,170 p=4668 u=root |  changed: [ubuntu2]
+2019-03-07 07:18:37,176 p=4668 u=root |  TASK [Configure nginx document root folder in CentOS] **************************************************************************
+2019-03-07 07:18:38,570 p=4668 u=root |  changed: [centos1]
+2019-03-07 07:18:38,600 p=4668 u=root |  skipping: [ubuntu1]
+2019-03-07 07:18:38,641 p=4668 u=root |  skipping: [ubuntu2]
+2019-03-07 07:18:38,682 p=4668 u=root |  skipping: [ubuntu3]
+2019-03-07 07:18:38,729 p=4668 u=root |  skipping: [ubuntu4]
+2019-03-07 07:18:38,759 p=4668 u=root |  skipping: [ubuntu5]
+2019-03-07 07:18:38,885 p=4668 u=root |  changed: [centos4]
+2019-03-07 07:18:38,910 p=4668 u=root |  changed: [centos2]
+2019-03-07 07:18:38,944 p=4668 u=root |  changed: [centos3]
+2019-03-07 07:18:39,082 p=4668 u=root |  changed: [centos5]
+2019-03-07 07:18:39,086 p=4668 u=root |  TASK [Create the nginx document root folder] ***********************************************************************************
+2019-03-07 07:18:39,515 p=4668 u=root |  changed: [centos2]
+2019-03-07 07:18:39,596 p=4668 u=root |  changed: [centos1]
+2019-03-07 07:18:39,657 p=4668 u=root |  changed: [centos4]
+2019-03-07 07:18:39,659 p=4668 u=root |  changed: [centos3]
+2019-03-07 07:18:39,659 p=4668 u=root |  changed: [centos5]
+2019-03-07 07:18:39,885 p=4668 u=root |  changed: [ubuntu1]
+2019-03-07 07:18:39,988 p=4668 u=root |  changed: [ubuntu3]
+2019-03-07 07:18:39,995 p=4668 u=root |  changed: [ubuntu4]
+2019-03-07 07:18:39,997 p=4668 u=root |  changed: [ubuntu5]
+2019-03-07 07:18:40,034 p=4668 u=root |  changed: [ubuntu2]
+2019-03-07 07:18:40,041 p=4668 u=root |  TASK [Restart the nginx web server to apply the config changes] ****************************************************************
+2019-03-07 07:18:40,942 p=4668 u=root |   [WARNING]: Consider using service module rather than running service
+
+2019-03-07 07:18:40,942 p=4668 u=root |  changed: [centos2]
+2019-03-07 07:18:40,953 p=4668 u=root |  changed: [centos4]
+2019-03-07 07:18:41,093 p=4668 u=root |  changed: [centos3]
+2019-03-07 07:18:41,115 p=4668 u=root |  changed: [centos1]
+2019-03-07 07:18:41,118 p=4668 u=root |  changed: [centos5]
+2019-03-07 07:18:42,376 p=4668 u=root |  changed: [ubuntu3]
+2019-03-07 07:18:42,379 p=4668 u=root |  changed: [ubuntu2]
+2019-03-07 07:18:42,381 p=4668 u=root |  changed: [ubuntu1]
+2019-03-07 07:18:42,469 p=4668 u=root |  changed: [ubuntu4]
+2019-03-07 07:18:42,474 p=4668 u=root |  changed: [ubuntu5]
+2019-03-07 07:18:42,483 p=4668 u=root |  TASK [Deploy a custom web page inside nginx web server] ************************************************************************
+2019-03-07 07:18:43,763 p=4668 u=root |  changed: [centos2]
+2019-03-07 07:18:43,812 p=4668 u=root |  changed: [centos1]
+2019-03-07 07:18:43,905 p=4668 u=root |  changed: [centos3]
+2019-03-07 07:18:44,149 p=4668 u=root |  changed: [centos5]
+2019-03-07 07:18:44,154 p=4668 u=root |  changed: [centos4]
+2019-03-07 07:18:44,503 p=4668 u=root |  changed: [ubuntu2]
+2019-03-07 07:18:44,508 p=4668 u=root |  changed: [ubuntu1]
+2019-03-07 07:18:44,616 p=4668 u=root |  changed: [ubuntu3]
+2019-03-07 07:18:44,733 p=4668 u=root |  changed: [ubuntu4]
+2019-03-07 07:18:44,742 p=4668 u=root |  changed: [ubuntu5]
+2019-03-07 07:18:44,746 p=4668 u=root |  PLAY RECAP *********************************************************************************************************************
+2019-03-07 07:18:44,746 p=4668 u=root |  centos1                    : ok=7    changed=6    unreachable=0    failed=0   
+2019-03-07 07:18:44,746 p=4668 u=root |  centos2                    : ok=7    changed=6    unreachable=0    failed=0   
+2019-03-07 07:18:44,746 p=4668 u=root |  centos3                    : ok=7    changed=6    unreachable=0    failed=0   
+2019-03-07 07:18:44,746 p=4668 u=root |  centos4                    : ok=7    changed=6    unreachable=0    failed=0   
+2019-03-07 07:18:44,746 p=4668 u=root |  centos5                    : ok=7    changed=6    unreachable=0    failed=0   
+2019-03-07 07:18:44,747 p=4668 u=root |  ubuntu1                    : ok=6    changed=5    unreachable=0    failed=0   
+2019-03-07 07:18:44,747 p=4668 u=root |  ubuntu2                    : ok=6    changed=5    unreachable=0    failed=0   
+2019-03-07 07:18:44,747 p=4668 u=root |  ubuntu3                    : ok=6    changed=5    unreachable=0    failed=0   
+2019-03-07 07:18:44,747 p=4668 u=root |  ubuntu4                    : ok=6    changed=5    unreachable=0    failed=0   
+2019-03-07 07:18:44,747 p=4668 u=root |  ubuntu5                    : ok=6    changed=5    unreachable=0    failed=0   

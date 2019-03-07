@@ -1,0 +1,24 @@
+- name: Demonstrates use of dictionary
+  hosts: localhost
+  vars:
+    - proxy_config:
+         http_proxy: http://10.19.16.165:8080
+         https_proxy: http://10.19.16.165:8080
+     
+    - os_tools:
+        ubuntu: 
+           - vim
+           - tree
+           - default-jdk
+        centos:
+           - tool1
+           - tool2
+           - tool3 
+  tasks:
+    - debug: msg="Key is {{item.key}}, Value is {{item.value}}"
+      with_dict: "{{proxy_config}}"
+
+    - debug: msg="{{item.value}}" 
+      with_dict: "{{os_tools}}"
+
+    
