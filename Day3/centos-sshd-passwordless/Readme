@@ -1,0 +1,8 @@
+You need to make sure the authorized_keys is replaced with your public key.
+
+The assumption is you have login in as root
+sudo su -
+
+cp /root/.ssh/id_rsa.pub authorized_keys
+
+docker build -t tektutor/ansible-centos .
