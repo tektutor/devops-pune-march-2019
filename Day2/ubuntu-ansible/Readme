@@ -1,4 +1,4 @@
-You need to replace the existing authorized_keys with your public key
+You need to replace the existing authorized_keys with your public key.
 
 My assumption is, you have already switched as root user in the terminal as shown below
 sudo su -
