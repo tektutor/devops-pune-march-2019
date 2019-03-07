@@ -1,6 +1,35 @@
-You can check my blog for more details
+You can check my blog for useful Docker and Other topics
 http://tektutor.org/blog
 
+You may also subscribe to my YouTube channel below
+https://www.youtube.com/user/BulletJegan/videos
+
+You can install Docker latest version on Ubuntu with the below commands
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+sudo apt-get update
+sudo apt-get install \
+    apt-transport-https \
+    ca-certificates \
+    curl \
+    gnupg-agent \
+    software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository \
+   "deb [arch=amd64] https://download.docker.com/linux/ubuntu \
+   $(lsb_release -cs) \
+   stable"
+sudo apt-get update
+sudo apt-get install docker-ce
+
+You can install Docker latest version on CentOS with the below commands
++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
+sudo yum install -y yum-utils \
+  device-mapper-persistent-data \
+  lvm2
+sudo yum-config-manager \
+    --add-repo \
+    https://download.docker.com/linux/centos/docker-ce.repo
+sudo yum install docker-ce
 
 Listing docker images
 +++++++++++++++++++++
@@ -22,4 +51,39 @@ Creating a new container in the background/daemon mode
 ++++++++++++++++++++++++++++++++++++++++++++++++++++++
 docker run -dit --name ubuntu1 --hostname ubuntu1 ubuntu /bin/bash
 
+Listing only currently running containers
++++++++++++++++++++++++++++++++++++++++++
+docker ps 
 
+Listing only currently running container ids
+++++++++++++++++++++++++++++++++++++++++++++
+docker ps -q
+
+Listing all containers including the exited ones
+++++++++++++++++++++++++++++++++++++++++++++++++
+docker ps -a
+
+Listing all container ids including the exited ones
++++++++++++++++++++++++++++++++++++++++++++++++++++
+docker ps -aq
+
+Finding the IP adress of a container
+++++++++++++++++++++++++++++++++++++
+docker inspect ubuntu1 | grep IPA
+docker inspect -f {{.NetworkSettings.IPAddress}} ubuntu1
+
+Building a docker image from a Dockerfile
+++++++++++++++++++++++++++++++++++++++++++
+docker build -t tektutor/ansible-ubuntu .
+
+Deleting a currently running container graciously
++++++++++++++++++++++++++++++++++++++++++++++++++
+docker stop ubuntu1 && docker rm ubuntu1
+
+Deleting multiple containers graciously
++++++++++++++++++++++++++++++++++++++++
+docker stop $(docker ps -q) && docker rm $(docker ps -aq)
+
+Deleting an image
++++++++++++++++++
+docker rmi hello-world

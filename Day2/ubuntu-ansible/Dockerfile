@@ -12,8 +12,12 @@ RUN sed -i 's/PermitRootLogin prohibit-password/PermitRootLogin yes/' /etc/ssh/s
 # SSH login fix. Otherwise user is kicked off after login
 RUN sed 's@session\s*required\s*pam_loginuid.so@session optional pam_loginuid.so@g' -i /etc/pam.d/sshd
 
+#This copies the public key to the docker image under the specified directory location
 COPY authorized_keys /root/.ssh/authorized_keys
 
-EXPOSE 22
+#Opening up ports 22 for SSH Server and 80 for any web/app servers we may later install via Ansible.
+EXPOSE 22 
 EXPOSE 80 
+
+#Configuring SSH Server as the default start-up application on containers created out of this Docker image.
 CMD ["/usr/sbin/sshd", "-D"]
