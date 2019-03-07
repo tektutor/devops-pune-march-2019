@@ -1,0 +1,5 @@
+---
+# tasks file for apache2
+- include_tasks: "install-apache2-{{ansible_distribution|lower}}.yml"
+- include_tasks: "configure-apache2-{{ansible_distribution|lower}}.yml"
+- include_tasks: common-apache2-tasks.yml

@@ -1,0 +1,165 @@
+2019-03-07 13:15:35,400 p=32792 u=root |  [DEPRECATION WARNING]: The use of 'include' for tasks has been deprecated. Use 'import_tasks' for static inclusions or 
+'include_tasks' for dynamic inclusions. This feature will be removed in a future release. Deprecation warnings can be disabled 
+by setting deprecation_warnings=False in ansible.cfg.
+2019-03-07 13:15:35,467 p=32792 u=root |  [DEPRECATION WARNING]: include is kept for backwards compatibility but usage is discouraged. The module documentation details 
+page may explain more about this rationale.. This feature will be removed in a future release. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2019-03-07 13:15:35,470 p=32792 u=root |   [WARNING]: file /root/DevOps/Day4/AnsibleRole/apache2/tasks/common-apache2-tasks.yml is empty and had no tasks to include
+
+2019-03-07 13:15:35,608 p=32792 u=root |  PLAY [Demonstrates invokeing custom roles] *************************************************************************************
+2019-03-07 13:15:35,640 p=32792 u=root |  TASK [Gathering Facts] *********************************************************************************************************
+2019-03-07 13:15:36,540 p=32792 u=root |  ok: [ubuntu1]
+2019-03-07 13:15:36,545 p=32792 u=root |  ok: [ubuntu2]
+2019-03-07 13:15:39,486 p=32792 u=root |  ok: [centos2]
+2019-03-07 13:15:39,510 p=32792 u=root |  ok: [centos1]
+2019-03-07 13:15:39,518 p=32792 u=root |  TASK [apache2 : include] *******************************************************************************************************
+2019-03-07 13:15:39,598 p=32792 u=root |  included: /root/DevOps/Day4/AnsibleRole/apache2/tasks/install-apache2-centos.yml for centos1, centos2
+2019-03-07 13:15:39,603 p=32792 u=root |  included: /root/DevOps/Day4/AnsibleRole/apache2/tasks/install-apache2-ubuntu.yml for ubuntu1, ubuntu2
+2019-03-07 13:15:39,612 p=32792 u=root |  TASK [apache2 : Install Extra Packages for Enterprise Linux (EPEL) in CentOS] **************************************************
+2019-03-07 13:16:21,226 p=32792 u=root |  ok: [centos1]
+2019-03-07 13:16:21,252 p=32792 u=root |  ok: [centos2]
+2019-03-07 13:16:21,262 p=32792 u=root |  TASK [apache2 : Install apache2 in CentOS] *************************************************************************************
+2019-03-07 13:17:26,991 p=32792 u=root |  changed: [centos1]
+2019-03-07 13:17:51,316 p=32792 u=root |  changed: [centos2]
+2019-03-07 13:17:51,322 p=32792 u=root |  TASK [apache2 : Install apache2 in Ubuntu] *************************************************************************************
+2019-03-07 13:21:34,789 p=32792 u=root |  changed: [ubuntu2]
+2019-03-07 13:22:41,658 p=32792 u=root |  changed: [ubuntu1]
+2019-03-07 13:22:41,666 p=32792 u=root |  TASK [apache2 : include] *******************************************************************************************************
+2019-03-07 13:22:41,745 p=32792 u=root |  PLAY RECAP *********************************************************************************************************************
+2019-03-07 13:22:41,745 p=32792 u=root |  centos1                    : ok=4    changed=1    unreachable=0    failed=0   
+2019-03-07 13:22:41,745 p=32792 u=root |  centos2                    : ok=4    changed=1    unreachable=0    failed=0   
+2019-03-07 13:22:41,745 p=32792 u=root |  ubuntu1                    : ok=3    changed=1    unreachable=0    failed=0   
+2019-03-07 13:22:41,746 p=32792 u=root |  ubuntu2                    : ok=3    changed=1    unreachable=0    failed=0   
+2019-03-07 13:41:18,207 p=35747 u=root |  [DEPRECATION WARNING]: The use of 'include' for tasks has been deprecated. Use 'import_tasks' for static inclusions or 
+'include_tasks' for dynamic inclusions. This feature will be removed in a future release. Deprecation warnings can be disabled 
+by setting deprecation_warnings=False in ansible.cfg.
+2019-03-07 13:41:18,252 p=35747 u=root |  [DEPRECATION WARNING]: include is kept for backwards compatibility but usage is discouraged. The module documentation details 
+page may explain more about this rationale.. This feature will be removed in a future release. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2019-03-07 13:41:18,383 p=35747 u=root |  PLAY [Demonstrates invokeing custom roles] *************************************************************************************
+2019-03-07 13:41:18,390 p=35747 u=root |  TASK [Gathering Facts] *********************************************************************************************************
+2019-03-07 13:41:19,107 p=35747 u=root |  ok: [ubuntu2]
+2019-03-07 13:41:19,114 p=35747 u=root |  ok: [ubuntu1]
+2019-03-07 13:41:21,899 p=35747 u=root |  ok: [centos1]
+2019-03-07 13:41:21,923 p=35747 u=root |  ok: [centos2]
+2019-03-07 13:41:21,928 p=35747 u=root |  TASK [apache2 : include] *******************************************************************************************************
+2019-03-07 13:41:21,983 p=35747 u=root |  included: /root/DevOps/Day4/AnsibleRole/apache2/tasks/install-apache2-centos.yml for centos1, centos2
+2019-03-07 13:41:21,986 p=35747 u=root |  included: /root/DevOps/Day4/AnsibleRole/apache2/tasks/install-apache2-ubuntu.yml for ubuntu1, ubuntu2
+2019-03-07 13:41:21,994 p=35747 u=root |  TASK [apache2 : Install Extra Packages for Enterprise Linux (EPEL) in CentOS] **************************************************
+2019-03-07 13:42:01,431 p=35747 u=root |  ok: [centos1]
+2019-03-07 13:42:04,058 p=35747 u=root |  ok: [centos2]
+2019-03-07 13:42:04,064 p=35747 u=root |  TASK [apache2 : Install apache2 in CentOS] *************************************************************************************
+2019-03-07 13:42:17,213 p=35747 u=root |  ok: [centos2]
+2019-03-07 13:42:17,228 p=35747 u=root |  ok: [centos1]
+2019-03-07 13:42:17,233 p=35747 u=root |  TASK [apache2 : Install apache2 in Ubuntu] *************************************************************************************
+2019-03-07 13:44:38,843 p=35747 u=root |  fatal: [ubuntu1]: FAILED! => {"changed": false, "msg": "Failed to update apt cache."}
+2019-03-07 13:45:04,638 p=35747 u=root |  fatal: [ubuntu2]: FAILED! => {"changed": false, "msg": "Failed to update apt cache."}
+2019-03-07 13:45:04,643 p=35747 u=root |  TASK [apache2 : include] *******************************************************************************************************
+2019-03-07 13:45:04,679 p=35747 u=root |  included: /root/DevOps/Day4/AnsibleRole/apache2/tasks/configure-apache2-centos.yml for centos1, centos2
+2019-03-07 13:45:04,696 p=35747 u=root |  TASK [apache2 : Grant permission to updated document root folder in CentOS] ****************************************************
+2019-03-07 13:45:05,741 p=35747 u=root |  changed: [centos1]
+2019-03-07 13:45:05,744 p=35747 u=root |  changed: [centos2]
+2019-03-07 13:45:05,748 p=35747 u=root |  TASK [apache2 : Create document root folder] ***********************************************************************************
+2019-03-07 13:45:06,042 p=35747 u=root |  ok: [centos1]
+2019-03-07 13:45:06,043 p=35747 u=root |  ok: [centos2]
+2019-03-07 13:45:06,048 p=35747 u=root |  TASK [apache2 : Deplopy custom web page into apache2] **************************************************************************
+2019-03-07 13:45:06,386 p=35747 u=root |  ok: [centos1]
+2019-03-07 13:45:06,403 p=35747 u=root |  ok: [centos2]
+2019-03-07 13:45:06,404 p=35747 u=root |  RUNNING HANDLER [apache2 : Restart httpd service in CentOS] ********************************************************************
+2019-03-07 13:45:06,972 p=35747 u=root |   [WARNING]: Consider using service module rather than running service
+
+2019-03-07 13:45:06,972 p=35747 u=root |  fatal: [centos1]: FAILED! => {"changed": true, "cmd": ["service", "httpd", "restart"], "delta": "0:00:00.255852", "end": "2019-03-07 08:15:06.955161", "msg": "non-zero return code", "rc": 1, "start": "2019-03-07 08:15:06.699309", "stderr": "httpd: Could not reliably determine the server's fully qualified domain name, using 172.17.0.6 for ServerName\n(98)Address already in use: make_sock: could not bind to address 0.0.0.0:80\nno listening sockets available, shutting down\nUnable to open logs", "stderr_lines": ["httpd: Could not reliably determine the server's fully qualified domain name, using 172.17.0.6 for ServerName", "(98)Address already in use: make_sock: could not bind to address 0.0.0.0:80", "no listening sockets available, shutting down", "Unable to open logs"], "stdout": "Stopping httpd: [  OK  ]\r\nStarting httpd: [FAILED]", "stdout_lines": ["Stopping httpd: [  OK  ]", "Starting httpd: [FAILED]"]}
+2019-03-07 13:45:06,973 p=35747 u=root |  fatal: [centos2]: FAILED! => {"changed": true, "cmd": ["service", "httpd", "restart"], "delta": "0:00:00.256523", "end": "2019-03-07 08:15:06.955095", "msg": "non-zero return code", "rc": 1, "start": "2019-03-07 08:15:06.698572", "stderr": "httpd: Could not reliably determine the server's fully qualified domain name, using 172.17.0.5 for ServerName\n(98)Address already in use: make_sock: could not bind to address 0.0.0.0:80\nno listening sockets available, shutting down\nUnable to open logs", "stderr_lines": ["httpd: Could not reliably determine the server's fully qualified domain name, using 172.17.0.5 for ServerName", "(98)Address already in use: make_sock: could not bind to address 0.0.0.0:80", "no listening sockets available, shutting down", "Unable to open logs"], "stdout": "Stopping httpd: [  OK  ]\r\nStarting httpd: [FAILED]", "stdout_lines": ["Stopping httpd: [  OK  ]", "Starting httpd: [FAILED]"]}
+2019-03-07 13:45:06,975 p=35747 u=root |  	to retry, use: --limit @/root/DevOps/Day4/AnsibleRole/install-apache2.retry
+
+2019-03-07 13:45:06,975 p=35747 u=root |  PLAY RECAP *********************************************************************************************************************
+2019-03-07 13:45:06,975 p=35747 u=root |  centos1                    : ok=8    changed=1    unreachable=0    failed=1   
+2019-03-07 13:45:06,975 p=35747 u=root |  centos2                    : ok=8    changed=1    unreachable=0    failed=1   
+2019-03-07 13:45:06,976 p=35747 u=root |  ubuntu1                    : ok=2    changed=0    unreachable=0    failed=1   
+2019-03-07 13:45:06,976 p=35747 u=root |  ubuntu2                    : ok=2    changed=0    unreachable=0    failed=1   
+2019-03-07 13:46:33,800 p=36953 u=root |   [WARNING]: Consider using service module rather than running service
+
+2019-03-07 13:46:33,800 p=36953 u=root |  centos2 | SUCCESS | rc=0 >>
+Stopping nginx: [  OK  ]
+
+2019-03-07 13:46:33,802 p=36953 u=root |  centos1 | SUCCESS | rc=0 >>
+Stopping nginx: [  OK  ]
+
+2019-03-07 13:46:34,535 p=36953 u=root |  ubuntu1 | SUCCESS | rc=0 >>
+ * Stopping nginx nginx
+   ...done.
+
+2019-03-07 13:46:34,539 p=36953 u=root |  ubuntu2 | SUCCESS | rc=0 >>
+ * Stopping nginx nginx
+   ...done.
+
+2019-03-07 13:46:54,104 p=37180 u=root |  [DEPRECATION WARNING]: The use of 'include' for tasks has been deprecated. Use 'import_tasks' for static inclusions or 
+'include_tasks' for dynamic inclusions. This feature will be removed in a future release. Deprecation warnings can be disabled 
+by setting deprecation_warnings=False in ansible.cfg.
+2019-03-07 13:46:54,144 p=37180 u=root |  [DEPRECATION WARNING]: include is kept for backwards compatibility but usage is discouraged. The module documentation details 
+page may explain more about this rationale.. This feature will be removed in a future release. Deprecation warnings can be 
+disabled by setting deprecation_warnings=False in ansible.cfg.
+2019-03-07 13:46:54,272 p=37180 u=root |  PLAY [Demonstrates invokeing custom roles] *************************************************************************************
+2019-03-07 13:46:54,279 p=37180 u=root |  TASK [Gathering Facts] *********************************************************************************************************
+2019-03-07 13:46:54,835 p=37180 u=root |  ok: [ubuntu2]
+2019-03-07 13:46:54,853 p=37180 u=root |  ok: [ubuntu1]
+2019-03-07 13:46:57,470 p=37180 u=root |  ok: [centos1]
+2019-03-07 13:46:57,474 p=37180 u=root |  ok: [centos2]
+2019-03-07 13:46:57,478 p=37180 u=root |  TASK [apache2 : include] *******************************************************************************************************
+2019-03-07 13:46:57,531 p=37180 u=root |  included: /root/DevOps/Day4/AnsibleRole/apache2/tasks/install-apache2-centos.yml for centos1, centos2
+2019-03-07 13:46:57,535 p=37180 u=root |  included: /root/DevOps/Day4/AnsibleRole/apache2/tasks/install-apache2-ubuntu.yml for ubuntu1, ubuntu2
+2019-03-07 13:46:57,543 p=37180 u=root |  TASK [apache2 : Install Extra Packages for Enterprise Linux (EPEL) in CentOS] **************************************************
+2019-03-07 13:46:57,864 p=37180 u=root |   [ERROR]: User interrupted execution
+
+2019-03-07 13:47:30,940 p=37453 u=root |  PLAY [Demonstrates invokeing custom roles] *************************************************************************************
+2019-03-07 13:47:30,947 p=37453 u=root |  TASK [Gathering Facts] *********************************************************************************************************
+2019-03-07 13:47:31,540 p=37453 u=root |  ok: [ubuntu2]
+2019-03-07 13:47:31,580 p=37453 u=root |  ok: [ubuntu1]
+2019-03-07 13:47:34,345 p=37453 u=root |  ok: [centos1]
+2019-03-07 13:47:34,388 p=37453 u=root |  ok: [centos2]
+2019-03-07 13:47:34,393 p=37453 u=root |  TASK [apache2 : include_tasks] *************************************************************************************************
+2019-03-07 13:47:34,459 p=37453 u=root |  included: /root/DevOps/Day4/AnsibleRole/apache2/tasks/install-apache2-centos.yml for centos1, centos2
+2019-03-07 13:47:34,463 p=37453 u=root |  included: /root/DevOps/Day4/AnsibleRole/apache2/tasks/install-apache2-ubuntu.yml for ubuntu1, ubuntu2
+2019-03-07 13:47:34,469 p=37453 u=root |  TASK [apache2 : Install Extra Packages for Enterprise Linux (EPEL) in CentOS] **************************************************
+2019-03-07 13:47:44,656 p=37453 u=root |  ok: [centos1]
+2019-03-07 13:47:45,376 p=37453 u=root |  ok: [centos2]
+2019-03-07 13:47:45,382 p=37453 u=root |  TASK [apache2 : Install apache2 in CentOS] *************************************************************************************
+2019-03-07 13:47:55,861 p=37453 u=root |  ok: [centos2]
+2019-03-07 13:48:04,017 p=37453 u=root |  ok: [centos1]
+2019-03-07 13:48:04,022 p=37453 u=root |  TASK [apache2 : Install apache2 in Ubuntu] *************************************************************************************
+2019-03-07 13:48:07,674 p=37453 u=root |  ok: [ubuntu1]
+2019-03-07 13:50:54,656 p=37453 u=root |  ok: [ubuntu2]
+2019-03-07 13:50:54,670 p=37453 u=root |  TASK [apache2 : include_tasks] *************************************************************************************************
+2019-03-07 13:50:54,773 p=37453 u=root |  included: /root/DevOps/Day4/AnsibleRole/apache2/tasks/configure-apache2-centos.yml for centos1, centos2
+2019-03-07 13:50:54,785 p=37453 u=root |  included: /root/DevOps/Day4/AnsibleRole/apache2/tasks/configure-apache2-ubuntu.yml for ubuntu1, ubuntu2
+2019-03-07 13:50:54,805 p=37453 u=root |  TASK [apache2 : Grant permission to updated document root folder in CentOS] ****************************************************
+2019-03-07 13:50:55,527 p=37453 u=root |  ok: [centos1]
+2019-03-07 13:50:55,530 p=37453 u=root |  ok: [centos2]
+2019-03-07 13:50:55,536 p=37453 u=root |  TASK [apache2 : Configure apache2 Document Root Folder in Ubuntu] **************************************************************
+2019-03-07 13:50:56,277 p=37453 u=root |  changed: [ubuntu1]
+2019-03-07 13:50:56,279 p=37453 u=root |  changed: [ubuntu2]
+2019-03-07 13:50:56,283 p=37453 u=root |  TASK [apache2 : Grant permission to updated document root folder in Ubuntu] ****************************************************
+2019-03-07 13:50:56,699 p=37453 u=root |  changed: [ubuntu1]
+2019-03-07 13:50:56,711 p=37453 u=root |  changed: [ubuntu2]
+2019-03-07 13:50:56,717 p=37453 u=root |  TASK [apache2 : include_tasks] *************************************************************************************************
+2019-03-07 13:50:56,787 p=37453 u=root |  included: /root/DevOps/Day4/AnsibleRole/apache2/tasks/common-apache2-tasks.yml for centos1, centos2, ubuntu1, ubuntu2
+2019-03-07 13:50:56,813 p=37453 u=root |  TASK [apache2 : Create document root folder] ***********************************************************************************
+2019-03-07 13:50:57,214 p=37453 u=root |  ok: [centos1]
+2019-03-07 13:50:57,220 p=37453 u=root |  ok: [ubuntu1]
+2019-03-07 13:50:57,222 p=37453 u=root |  ok: [centos2]
+2019-03-07 13:50:57,247 p=37453 u=root |  ok: [ubuntu2]
+2019-03-07 13:50:57,255 p=37453 u=root |  TASK [apache2 : Deplopy custom web page into apache2] **************************************************************************
+2019-03-07 13:50:57,820 p=37453 u=root |  ok: [ubuntu1]
+2019-03-07 13:50:57,844 p=37453 u=root |  ok: [centos2]
+2019-03-07 13:50:57,853 p=37453 u=root |  ok: [centos1]
+2019-03-07 13:50:57,875 p=37453 u=root |  ok: [ubuntu2]
+2019-03-07 13:50:57,876 p=37453 u=root |  RUNNING HANDLER [apache2 : Restart apache2 service in Ubuntu] ******************************************************************
+2019-03-07 13:50:58,320 p=37453 u=root |   [WARNING]: Consider using service module rather than running service
+
+2019-03-07 13:50:58,320 p=37453 u=root |  changed: [ubuntu1]
+2019-03-07 13:50:59,329 p=37453 u=root |  changed: [ubuntu2]
+2019-03-07 13:50:59,331 p=37453 u=root |  PLAY RECAP *********************************************************************************************************************
+2019-03-07 13:50:59,332 p=37453 u=root |  centos1                    : ok=9    changed=0    unreachable=0    failed=0   
+2019-03-07 13:50:59,332 p=37453 u=root |  centos2                    : ok=9    changed=0    unreachable=0    failed=0   
+2019-03-07 13:50:59,332 p=37453 u=root |  ubuntu1                    : ok=10   changed=3    unreachable=0    failed=0   
+2019-03-07 13:50:59,332 p=37453 u=root |  ubuntu2                    : ok=10   changed=3    unreachable=0    failed=0   

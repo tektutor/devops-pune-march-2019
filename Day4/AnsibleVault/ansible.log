@@ -1,0 +1,44 @@
+2019-03-07 12:22:42,466 p=31316 u=root |  ERROR! Missing required action
+2019-03-07 12:26:14,978 p=31372 u=root |  ERROR! Missing required action
+2019-03-07 12:26:31,780 p=31377 u=root |  ERROR! Attempting to decrypt but no vault secrets found
+2019-03-07 12:27:05,971 p=31386 u=root |  PLAY [Demonstrates accessing Ansible vault protected files and data stored in it] **********************************************
+2019-03-07 12:27:05,995 p=31386 u=root |  TASK [Gathering Facts] *********************************************************************************************************
+2019-03-07 12:27:17,291 p=31386 u=root |  ok: [localhost]
+2019-03-07 12:27:17,297 p=31386 u=root |  TASK [debug] *******************************************************************************************************************
+2019-03-07 12:27:17,322 p=31386 u=root |  ok: [localhost] => {
+    "msg": "Username is root and Password is my-secret-password"
+}
+2019-03-07 12:27:17,323 p=31386 u=root |  PLAY RECAP *********************************************************************************************************************
+2019-03-07 12:27:17,323 p=31386 u=root |  localhost                  : ok=2    changed=0    unreachable=0    failed=0   
+2019-03-07 12:28:30,113 p=31534 u=root |  Decryption successful
+2019-03-07 12:29:07,073 p=31542 u=root |  Encryption successful
+2019-03-07 12:29:20,082 p=31559 u=root |  PLAY [Demonstrates accessing Ansible vault protected files and data stored in it] **********************************************
+2019-03-07 12:29:20,104 p=31559 u=root |  TASK [Gathering Facts] *********************************************************************************************************
+2019-03-07 12:29:30,867 p=31559 u=root |  ok: [localhost]
+2019-03-07 12:29:30,874 p=31559 u=root |  TASK [debug] *******************************************************************************************************************
+2019-03-07 12:29:30,894 p=31559 u=root |  ok: [localhost] => {
+    "msg": "Username is root and Password is my-secret-password"
+}
+2019-03-07 12:29:30,896 p=31559 u=root |  PLAY RECAP *********************************************************************************************************************
+2019-03-07 12:29:30,896 p=31559 u=root |  localhost                  : ok=2    changed=0    unreachable=0    failed=0   
+2019-03-07 12:30:10,863 p=31700 u=root |  PLAY [Demonstrates accessing Ansible vault protected files and data stored in it] **********************************************
+2019-03-07 12:30:10,886 p=31700 u=root |  TASK [Gathering Facts] *********************************************************************************************************
+2019-03-07 12:30:21,630 p=31700 u=root |  ok: [localhost]
+2019-03-07 12:30:21,637 p=31700 u=root |  TASK [debug] *******************************************************************************************************************
+2019-03-07 12:30:21,665 p=31700 u=root |  ok: [localhost] => {
+    "msg": "Username is jegan and Password is my-secret-password"
+}
+2019-03-07 12:30:21,667 p=31700 u=root |  PLAY RECAP *********************************************************************************************************************
+2019-03-07 12:30:21,668 p=31700 u=root |  localhost                  : ok=2    changed=0    unreachable=0    failed=0   
+2019-03-07 12:32:17,661 p=31825 u=root |  ERROR! Attempting to decrypt but no vault secrets found
+2019-03-07 12:32:48,677 p=31848 u=root |  PLAY [Demonstrates accessing Ansible vault protected files and data stored in it] **********************************************
+2019-03-07 12:32:48,709 p=31848 u=root |  TASK [Gathering Facts] *********************************************************************************************************
+2019-03-07 12:32:59,468 p=31848 u=root |  ok: [localhost]
+2019-03-07 12:32:59,477 p=31848 u=root |  TASK [debug] *******************************************************************************************************************
+2019-03-07 12:32:59,509 p=31848 u=root |  ok: [localhost] => {
+    "msg": "Username is jegan and Password is my-secret-password"
+}
+2019-03-07 12:32:59,510 p=31848 u=root |  PLAY RECAP *********************************************************************************************************************
+2019-03-07 12:32:59,511 p=31848 u=root |  localhost                  : ok=2    changed=0    unreachable=0    failed=0   
+2019-03-07 12:33:13,116 p=31948 u=root |  Decryption successful
+2019-03-07 12:33:21,000 p=31953 u=root |  Encryption successful

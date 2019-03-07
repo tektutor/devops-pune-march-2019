@@ -1,0 +1,129 @@
+2019-03-07 12:02:46,650 p=26321 u=root |  PLAY [Demonstrates uses of Ansible Handlers and Notifiers] *********************************************************************
+2019-03-07 12:02:46,659 p=26321 u=root |  TASK [Gathering Facts] *********************************************************************************************************
+2019-03-07 12:02:47,850 p=26321 u=root |  ok: [ubuntu2]
+2019-03-07 12:02:47,865 p=26321 u=root |  ok: [ubuntu1]
+2019-03-07 12:02:50,748 p=26321 u=root |  ok: [centos2]
+2019-03-07 12:02:50,887 p=26321 u=root |  ok: [centos1]
+2019-03-07 12:02:50,891 p=26321 u=root |  TASK [Install nginx in Ubuntu] *************************************************************************************************
+2019-03-07 12:02:50,916 p=26321 u=root |  skipping: [centos1]
+2019-03-07 12:02:50,928 p=26321 u=root |  skipping: [centos2]
+2019-03-07 12:05:13,644 p=26321 u=root |  fatal: [ubuntu2]: FAILED! => {"changed": false, "msg": "Failed to update apt cache."}
+2019-03-07 12:05:38,219 p=26321 u=root |  fatal: [ubuntu1]: FAILED! => {"changed": false, "msg": "Failed to update apt cache."}
+2019-03-07 12:05:38,222 p=26321 u=root |  	to retry, use: --limit @/root/DevOps/Day4/HandlersAndNotifiers/handlers-and-notifiers.retry
+
+2019-03-07 12:05:38,222 p=26321 u=root |  PLAY RECAP *********************************************************************************************************************
+2019-03-07 12:05:38,222 p=26321 u=root |  centos1                    : ok=1    changed=0    unreachable=0    failed=0   
+2019-03-07 12:05:38,223 p=26321 u=root |  centos2                    : ok=1    changed=0    unreachable=0    failed=0   
+2019-03-07 12:05:38,223 p=26321 u=root |  ubuntu1                    : ok=1    changed=0    unreachable=0    failed=1   
+2019-03-07 12:05:38,223 p=26321 u=root |  ubuntu2                    : ok=1    changed=0    unreachable=0    failed=1   
+2019-03-07 12:06:07,553 p=26951 u=root |  PLAY [Demonstrates uses of Ansible Handlers and Notifiers] *********************************************************************
+2019-03-07 12:06:07,562 p=26951 u=root |  TASK [Gathering Facts] *********************************************************************************************************
+2019-03-07 12:06:08,279 p=26951 u=root |  ok: [ubuntu1]
+2019-03-07 12:06:08,288 p=26951 u=root |  ok: [ubuntu2]
+2019-03-07 12:06:11,363 p=26951 u=root |  ok: [centos2]
+2019-03-07 12:06:11,379 p=26951 u=root |  ok: [centos1]
+2019-03-07 12:06:11,384 p=26951 u=root |  TASK [Install nginx in Ubuntu] *************************************************************************************************
+2019-03-07 12:06:11,413 p=26951 u=root |  skipping: [centos1]
+2019-03-07 12:06:11,428 p=26951 u=root |  skipping: [centos2]
+2019-03-07 12:06:16,627 p=26951 u=root |  ok: [ubuntu1]
+2019-03-07 12:06:17,379 p=26951 u=root |  ok: [ubuntu2]
+2019-03-07 12:06:17,381 p=26951 u=root |  PLAY RECAP *********************************************************************************************************************
+2019-03-07 12:06:17,381 p=26951 u=root |  centos1                    : ok=1    changed=0    unreachable=0    failed=0   
+2019-03-07 12:06:17,381 p=26951 u=root |  centos2                    : ok=1    changed=0    unreachable=0    failed=0   
+2019-03-07 12:06:17,381 p=26951 u=root |  ubuntu1                    : ok=2    changed=0    unreachable=0    failed=0   
+2019-03-07 12:06:17,381 p=26951 u=root |  ubuntu2                    : ok=2    changed=0    unreachable=0    failed=0   
+2019-03-07 12:08:20,807 p=27608 u=root |  PLAY [Demonstrates uses of Ansible Handlers and Notifiers] *********************************************************************
+2019-03-07 12:08:20,814 p=27608 u=root |  TASK [Gathering Facts] *********************************************************************************************************
+2019-03-07 12:08:21,739 p=27608 u=root |  ok: [ubuntu2]
+2019-03-07 12:08:21,762 p=27608 u=root |  ok: [ubuntu1]
+2019-03-07 12:08:24,692 p=27608 u=root |  ok: [centos2]
+2019-03-07 12:08:24,722 p=27608 u=root |  ok: [centos1]
+2019-03-07 12:08:24,728 p=27608 u=root |  TASK [Install nginx in Ubuntu] *************************************************************************************************
+2019-03-07 12:08:24,763 p=27608 u=root |  skipping: [centos1]
+2019-03-07 12:08:24,777 p=27608 u=root |  skipping: [centos2]
+2019-03-07 12:08:34,461 p=27608 u=root |  ok: [ubuntu2]
+2019-03-07 12:08:34,538 p=27608 u=root |  ok: [ubuntu1]
+2019-03-07 12:08:34,543 p=27608 u=root |  TASK [Restart nginx web service] ***********************************************************************************************
+2019-03-07 12:08:36,441 p=27608 u=root |   [WARNING]: Consider using service module rather than running service
+
+2019-03-07 12:08:36,442 p=27608 u=root |  changed: [ubuntu2]
+2019-03-07 12:08:36,443 p=27608 u=root |  changed: [ubuntu1]
+2019-03-07 12:08:36,757 p=27608 u=root |  changed: [centos1]
+2019-03-07 12:08:36,778 p=27608 u=root |  changed: [centos2]
+2019-03-07 12:08:36,781 p=27608 u=root |  PLAY RECAP *********************************************************************************************************************
+2019-03-07 12:08:36,782 p=27608 u=root |  centos1                    : ok=2    changed=1    unreachable=0    failed=0   
+2019-03-07 12:08:36,782 p=27608 u=root |  centos2                    : ok=2    changed=1    unreachable=0    failed=0   
+2019-03-07 12:08:36,782 p=27608 u=root |  ubuntu1                    : ok=3    changed=1    unreachable=0    failed=0   
+2019-03-07 12:08:36,782 p=27608 u=root |  ubuntu2                    : ok=3    changed=1    unreachable=0    failed=0   
+2019-03-07 12:08:44,132 p=28454 u=root |  PLAY [Demonstrates uses of Ansible Handlers and Notifiers] *********************************************************************
+2019-03-07 12:08:44,140 p=28454 u=root |  TASK [Gathering Facts] *********************************************************************************************************
+2019-03-07 12:08:44,981 p=28454 u=root |  ok: [ubuntu2]
+2019-03-07 12:08:44,985 p=28454 u=root |  ok: [ubuntu1]
+2019-03-07 12:08:47,983 p=28454 u=root |  ok: [centos1]
+2019-03-07 12:08:47,988 p=28454 u=root |  ok: [centos2]
+2019-03-07 12:08:47,992 p=28454 u=root |  TASK [Install nginx in Ubuntu] *************************************************************************************************
+2019-03-07 12:08:48,018 p=28454 u=root |  skipping: [centos1]
+2019-03-07 12:08:48,032 p=28454 u=root |  skipping: [centos2]
+2019-03-07 12:10:08,450 p=28454 u=root |  ok: [ubuntu1]
+2019-03-07 12:10:08,645 p=28454 u=root |  ok: [ubuntu2]
+2019-03-07 12:10:08,651 p=28454 u=root |  TASK [Restart nginx web service] ***********************************************************************************************
+2019-03-07 12:10:09,585 p=28454 u=root |   [WARNING]: Consider using service module rather than running service
+
+2019-03-07 12:10:09,585 p=28454 u=root |  changed: [centos1]
+2019-03-07 12:10:09,620 p=28454 u=root |  changed: [centos2]
+2019-03-07 12:10:10,141 p=28454 u=root |  changed: [ubuntu2]
+2019-03-07 12:10:10,168 p=28454 u=root |  changed: [ubuntu1]
+2019-03-07 12:10:10,171 p=28454 u=root |  PLAY RECAP *********************************************************************************************************************
+2019-03-07 12:10:10,171 p=28454 u=root |  centos1                    : ok=2    changed=1    unreachable=0    failed=0   
+2019-03-07 12:10:10,171 p=28454 u=root |  centos2                    : ok=2    changed=1    unreachable=0    failed=0   
+2019-03-07 12:10:10,171 p=28454 u=root |  ubuntu1                    : ok=3    changed=1    unreachable=0    failed=0   
+2019-03-07 12:10:10,172 p=28454 u=root |  ubuntu2                    : ok=3    changed=1    unreachable=0    failed=0   
+2019-03-07 12:12:00,135 p=29323 u=root |  PLAY [Demonstrates uses of Ansible Handlers and Notifiers] *********************************************************************
+2019-03-07 12:12:00,143 p=29323 u=root |  TASK [Gathering Facts] *********************************************************************************************************
+2019-03-07 12:12:01,254 p=29323 u=root |  ok: [ubuntu1]
+2019-03-07 12:12:01,260 p=29323 u=root |  ok: [ubuntu2]
+2019-03-07 12:12:04,098 p=29323 u=root |  ok: [centos1]
+2019-03-07 12:12:04,102 p=29323 u=root |  ok: [centos2]
+2019-03-07 12:12:04,107 p=29323 u=root |  TASK [Install nginx in Ubuntu] *************************************************************************************************
+2019-03-07 12:12:04,145 p=29323 u=root |  skipping: [centos1]
+2019-03-07 12:12:04,146 p=29323 u=root |  skipping: [centos2]
+2019-03-07 12:12:07,992 p=29323 u=root |  ok: [ubuntu1]
+2019-03-07 12:12:08,008 p=29323 u=root |  ok: [ubuntu2]
+2019-03-07 12:12:08,012 p=29323 u=root |  TASK [Restart nginx web service] ***********************************************************************************************
+2019-03-07 12:12:08,787 p=29323 u=root |   [WARNING]: Consider using service module rather than running service
+
+2019-03-07 12:12:08,787 p=29323 u=root |  changed: [centos2]
+2019-03-07 12:12:08,808 p=29323 u=root |  changed: [centos1]
+2019-03-07 12:12:09,447 p=29323 u=root |  changed: [ubuntu1]
+2019-03-07 12:12:09,461 p=29323 u=root |  changed: [ubuntu2]
+2019-03-07 12:12:09,465 p=29323 u=root |  TASK [setup] *******************************************************************************************************************
+2019-03-07 12:12:09,937 p=29323 u=root |  ok: [ubuntu1]
+2019-03-07 12:12:09,951 p=29323 u=root |  ok: [ubuntu2]
+2019-03-07 12:12:12,969 p=29323 u=root |  ok: [centos2]
+2019-03-07 12:12:13,029 p=29323 u=root |  ok: [centos1]
+2019-03-07 12:12:13,032 p=29323 u=root |  PLAY RECAP *********************************************************************************************************************
+2019-03-07 12:12:13,033 p=29323 u=root |  centos1                    : ok=3    changed=1    unreachable=0    failed=0   
+2019-03-07 12:12:13,033 p=29323 u=root |  centos2                    : ok=3    changed=1    unreachable=0    failed=0   
+2019-03-07 12:12:13,033 p=29323 u=root |  ubuntu1                    : ok=4    changed=1    unreachable=0    failed=0   
+2019-03-07 12:12:13,033 p=29323 u=root |  ubuntu2                    : ok=4    changed=1    unreachable=0    failed=0   
+2019-03-07 12:19:19,874 p=30429 u=root |  PLAY [Demonstrates uses of Ansible Handlers and Notifiers] *********************************************************************
+2019-03-07 12:19:19,881 p=30429 u=root |  TASK [Gathering Facts] *********************************************************************************************************
+2019-03-07 12:19:20,815 p=30429 u=root |  ok: [ubuntu2]
+2019-03-07 12:19:20,833 p=30429 u=root |  ok: [ubuntu1]
+2019-03-07 12:19:23,726 p=30429 u=root |  ok: [centos1]
+2019-03-07 12:19:23,760 p=30429 u=root |  ok: [centos2]
+2019-03-07 12:19:23,766 p=30429 u=root |  TASK [Install nginx in Ubuntu] *************************************************************************************************
+2019-03-07 12:19:23,803 p=30429 u=root |  skipping: [centos1]
+2019-03-07 12:19:23,804 p=30429 u=root |  skipping: [centos2]
+2019-03-07 12:19:30,241 p=30429 u=root |  ok: [ubuntu1]
+2019-03-07 12:20:41,547 p=30429 u=root |  ok: [ubuntu2]
+2019-03-07 12:20:41,554 p=30429 u=root |  TASK [setup] *******************************************************************************************************************
+2019-03-07 12:20:42,119 p=30429 u=root |  ok: [ubuntu2]
+2019-03-07 12:20:42,229 p=30429 u=root |  ok: [ubuntu1]
+2019-03-07 12:20:45,239 p=30429 u=root |  ok: [centos1]
+2019-03-07 12:20:45,265 p=30429 u=root |  ok: [centos2]
+2019-03-07 12:20:45,267 p=30429 u=root |  PLAY RECAP *********************************************************************************************************************
+2019-03-07 12:20:45,267 p=30429 u=root |  centos1                    : ok=2    changed=0    unreachable=0    failed=0   
+2019-03-07 12:20:45,267 p=30429 u=root |  centos2                    : ok=2    changed=0    unreachable=0    failed=0   
+2019-03-07 12:20:45,267 p=30429 u=root |  ubuntu1                    : ok=3    changed=0    unreachable=0    failed=0   
+2019-03-07 12:20:45,267 p=30429 u=root |  ubuntu2                    : ok=3    changed=0    unreachable=0    failed=0   

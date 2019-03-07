@@ -1,0 +1,19 @@
+- name: Demonstrates use of register variable
+  hosts: all
+  tasks:
+     - name: List the root directory files and directories
+       shell: ls -l / 
+       register: output
+       ignore_errors: yes
+
+     - debug: var=output
+       when: output.failed == true
+
+     - set_fact: 
+           prev_command_failed: "{{output.failed == true}}" 
+
+     - debug: msg="List task has failed."
+       when: prev_command_failed == true
+
+     - debug: msg="List task has succeeded."
+       when: prev_command_failed == false

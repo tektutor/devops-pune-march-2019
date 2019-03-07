@@ -1,0 +1,7 @@
+---
+- name: Install Extra Packages for Enterprise Linux (EPEL) in CentOS
+  yum: name=epel-release state=latest
+
+- name: Install apache2 in CentOS
+  yum: name=httpd state=latest 
+...

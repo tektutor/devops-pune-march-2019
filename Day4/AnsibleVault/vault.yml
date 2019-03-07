@@ -1,0 +1,7 @@
+- name: Demonstrates accessing Ansible vault protected files and data stored in it
+  hosts: localhost
+  vars_files:
+     - credentials.yml
+
+  tasks:
+    - debug: msg="Username is {{username}} and Password is {{password}}"

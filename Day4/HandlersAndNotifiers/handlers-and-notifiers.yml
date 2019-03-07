@@ -1,0 +1,19 @@
+- name: Demonstrates uses of Ansible Handlers and Notifiers
+  hosts: all
+  tasks:
+    - name: Install nginx in Ubuntu
+      when: ansible_distribution == "Ubuntu"
+      apt: name=nginx state=latest update_cache=yes
+      notify:
+         - Restart nginx web service
+
+    - setup:
+      notify:
+         - Setup module was invoked
+
+  handlers:
+     - name: Restart nginx web service
+       command: service nginx restart
+     
+     - name: Setup module was invoked
+       debug: msg="Setup module was invoked ...."

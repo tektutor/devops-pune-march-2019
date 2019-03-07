@@ -1,0 +1,4 @@
+- name: Demonstrates invoking custom roles
+  hosts: all
+  roles:
+     - apache2

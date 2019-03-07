@@ -1,0 +1,32 @@
+2019-03-07 11:55:17,895 p=25824 u=root |  centos1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2019-03-07 11:55:17,905 p=25824 u=root |  centos2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2019-03-07 11:55:17,923 p=25824 u=root |  ubuntu2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2019-03-07 11:55:17,953 p=25824 u=root |  ubuntu1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2019-03-07 11:58:08,489 p=26020 u=root |  centos1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2019-03-07 11:58:08,494 p=26020 u=root |  centos2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2019-03-07 11:58:08,512 p=26020 u=root |  ubuntu2 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
+2019-03-07 11:58:08,519 p=26020 u=root |  ubuntu1 | SUCCESS => {
+    "changed": false, 
+    "ping": "pong"
+}
