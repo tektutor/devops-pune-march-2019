@@ -51,6 +51,9 @@ https://www.youtube.com/watch?v=W520vrQSs0U&t=1438s<br>
 Ansible Getting Started<br>
 https://docs.ansible.com/ansible/latest/user_guide/intro_getting_started.html<br>
 
+Maven setup for deploying artifacts to Sonatype Nexus
+https://blog.sonatype.com/using-nexus-3-as-your-repository-part-1-maven-artifacts
+
 
 
 
