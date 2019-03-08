@@ -1,0 +1,14 @@
+Ansible Dynamic Inventories are used in the place of static Ansible inventory. The convenience of using dynamic inventory is
+that you don't need to modify the static inventory every time you either deleted some containers or created some.
+
+ansible all -m ping
+
+The above command first checks that there is an ansible.cfg in the current directory, using ansible.cfg it then understand
+it should be using dynamic_inventory.py as the inventory file to get all the connection details that we normally provide via
+hosts/inventory file.
+
+Let's say you wish to now execute the ping.yml playbook you could do so now with the below command
+ansible-playbook ping.yml
+
+Interestingly, there is no hosts or inventory over there but a smart python script that finds the currently running containers
+and the does the magic of what a normal static inventory would do.
