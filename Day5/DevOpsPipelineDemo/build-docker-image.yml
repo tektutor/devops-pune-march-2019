@@ -1,0 +1,30 @@
+- name: This play will build Ubuntu Docker Image 
+  hosts: localhost
+  tasks:
+    - name: Install Python package installer(pip) in Ubuntu
+      when: ansible_distribution == "Ubuntu"
+      apt: name=python-pip state=latest update_cache=yes
+
+    - name: Install Extra Packages for Enterprise Linux (EPEL) in CentOS
+      when: ansible_distribution == "CentOS"
+      yum: name=epel-release state=latest 
+
+    - name: Install Python package installer(pip) in CentOS
+      when: ansible_distribution == "CentOS"
+      yum: name=python-pip state=latest 
+
+    - name: Install docker-py python modules
+      shell: pip install docker-py
+
+    - name: Remove all existing containers
+      shell: docker rm -f $(docker ps -aq)
+
+    - name: Delete the custom ansible images
+      shell: docker rmi tektutor/ansible-ubuntu
+    
+    - name: Build Ubuntu Ansible Docker Image
+      docker_image:
+         name: "tektutor/ansible-ubuntu"
+         state: build
+         dockerfile: UbuntuDockerfile
+         path: .
