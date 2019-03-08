@@ -1,0 +1,15 @@
+You can execute the Python scripts as shown below
+
+python hello.py
+python function.py
+python myclass.py
+python ./hello.py
+
+Alternatively you could provide execute permision to the python scripts as
+chmod +x ./hello.py
+chmod +x ./function.py
+chmod +x ./myclass.py
+
+./hello.py
+./function.py
+./myclass.py
