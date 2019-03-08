@@ -17,7 +17,7 @@
 	<distributionManagement>
 		<repository>
 			<id>releases</id>
-			<url>http://172.17.0.2:8081/repository/maven-releases/</url>
+			<url>http://169.254.94.101:8081/repository/maven-releases/</url>
 		</repository>
 	</distributionManagement>
 </project>
