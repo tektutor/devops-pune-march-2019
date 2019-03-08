@@ -1,3 +1,14 @@
 You can execute the playbook register.yml as shown below
 
 ansible-playbook register.yml
+
+This folder also has Lab exercises that demonstrates the below topics
+
+1. Developing an Ansible Custom Role
+2. Developing an Ansible Custom Module
+3. Ansible Dynamic Inventory
+4. Python Overview simple examples
+5. Ansible Loops with
+      1. Sequence
+      2. List
+      3. Dictionary
