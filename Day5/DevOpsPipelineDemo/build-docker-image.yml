@@ -16,9 +16,9 @@
     - name: Install docker-py python modules
       shell: pip install docker-py
 
-    - name: Remove all existing containers
-      shell: docker rm -f $(docker ps -aq)
-      ignore_errors: yes
+#    - name: Remove all existing containers
+#      shell: docker rm -f $(docker ps -aq)
+#      ignore_errors: yes
 
     - name: Delete the custom ansible images
       shell: docker rmi tektutor/ansible-ubuntu
