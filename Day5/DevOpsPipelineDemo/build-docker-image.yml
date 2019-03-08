@@ -18,9 +18,11 @@
 
     - name: Remove all existing containers
       shell: docker rm -f $(docker ps -aq)
+      ignore_errors: yes
 
     - name: Delete the custom ansible images
       shell: docker rmi tektutor/ansible-ubuntu
+      ignore_errors: yes
     
     - name: Build Ubuntu Ansible Docker Image
       docker_image:
