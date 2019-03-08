@@ -1,0 +1,21 @@
+Ansible Vault protect your sensitive data by encrypting the files that stores sensitive data.
+
+The below command will let you create a credentials.yml file using ansible-vault tool, which also encrypts the file 
+with the password you provided at the time of creating the credentials.yml file.
+
+ansible-vault create crendentials.yml
+
+You could later investigate the file content
+cat credentials.yml
+
+You could edit the contents of the encrypted file by providing the same password that you used to encrypt the data
+ansible-vault edit credentials.yml 
+
+You could optionally decrypt the file explicitly as shown below
+ansible-vault decrypt credentials.yml
+
+In case, you already have created a file that holds some sensitive data that you would like to protect with Ansible vault, then
+ansible-vault encrypt credentials.yml
+
+In case you are wondering how to access this Ansible vault protected file from a playbook, try this command
+ansible-playbook vault.yml
