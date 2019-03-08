@@ -1,0 +1,3 @@
+You can execute the playbook register.yml as shown below
+
+ansible-playbook register.yml
