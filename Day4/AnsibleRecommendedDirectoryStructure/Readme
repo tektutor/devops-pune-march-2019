@@ -1,0 +1,10 @@
+You could try any Ansible ad-hoc commands in this folder as shown below
+
+ansible all -m ping
+ansible all -m shell -a "uptime"
+ansible all -m shell -a "hostname -i"
+
+Alternatively, you could create or copy some of the playbooks we wrote into this folder and may try executing them as shown below
+
+ansible-playbook install-nginx.yml
+ansible-playbook install-apache2.yml
